@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(contact.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* DEFINICOES */
+:root{
+    --font-pattern:"Roboto", sans-serif;
+
+    --color-text:#f1f1f1;
+    --color-text-desc:#727272;
+
+    --heading1:1.75rem; /*28px*/
+    --heading2:1.5rem; /*24px - semi-bold*/
+    --heading3:1.25rem; /*20px*/
+
+    --text1:1rem; /*16px*/
+    --text2:0.87rem; /*14px - body*/
+    --text3:0.72rem; /*12px - details*/
+
+    --spacing-cells:1rem;
+    --spacing-text:.35rem;
+    --padding-pattern:1.5rem 1rem;
+    --padding-sm:1.1rem .9rem;
+
+    --internal-padding-input:.8rem .5rem ;
+}
+html, body{
+    scroll-behavior: smooth;
+    position: relative;
+    font-family: var(--font-pattern);
+}
+
+.headerPage{
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+.headerPage .logo{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerPage .logo img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.headerPage ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 1rem;
+}

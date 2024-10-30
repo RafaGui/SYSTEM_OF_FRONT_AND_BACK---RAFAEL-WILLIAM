@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <!-- JS -->
+    <script src="../assets/js/main.js" defer></script>
+    <!-- externals -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <title>Rafael William | Orcamento</title>
+  </head>
+  <body>
+    <main class="contactForm">
+        <div class="bgImage">
+            <img src="../assets/images/hero.jpg" alt="background">
+        </div>
+      <div class="contractFormCase">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/images/logo-bca.png" alt="logo">
+            </a>
+        </div>
+        <div class="attemption">
+          <h2>Olá, vamos trabalhar juntos?</h2>
+          <p>
+            Vamos fazer uma rapida pesquisa sobre o que você precisa. Isso me
+            ajuda a ser mais preciso no valor e na estimativa de
+            desenvolvimento.
+          </p>
+        </div>
+        <form class="classForm" action="../assets/php/validation.php" method="post">
+          <div class="inputsCase">
+            <input
+              autocomplete="off"
+              required
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Digite seu nome"
+            />
+            <div class="PassMail">
+              <input
+                autocomplete="off"
+                required
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Digitge seu melhor E-mail"
+              /><br />
+              <input
+                autocomplete="off"
+                required
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Digite seu número"
+              />
+            </div>
+          </div>
+          <div class="aboutProject">
+            <p>Sobre o que vamos falar?</p>
+            <select required name="projectType" id="projectType">
+              <option selected disabled >Escolha uma das opções</option>
+              <option value="desenvolviemntoWeb">Desenvolvimento Web</option>
+              <option value="webDesign">Web Design</option>
+              <option value="ConsultoriaAnalise">Consultoria e Análise</option>
+              <option value="outrosAssuntos">Outros Assuntos</option>
+            </select>
+          </div>
+
+          <div class="terms">
+            <input required type="checkbox" name="terms" id="terms" />
+            <label for="terms"
+              >Concordo com os  
+              <a
+                target="_blank"
+                href="../assets/docs/CONTRATO DE PRESTAÇÃO DE SERVIÇOS WEB.pdf"
+                >termos </a
+              >de prestação de serviço.</label
+            ><br />
+            <span
+              >Após a conclusão desta consulta será enviado para seu e-mail uma
+              requisição de confirmação formal</span
+            >
+          </div><br><br>
+          <div class="warning">
+            <h4>Importante !</h4>
+            <p>
+              Todo orçamento que será feito não terá custo nenhum, sendo
+              completamente sem compromisso.
+            </p>
+          </div>
+          <div class="caseBtns">
+            <button type="submit">Concluir</button>
+            <button type="reset">Limpar Campos</button>
+          </div>
+        </form>
+      </div>
+      <br>
+      <a class="externalLink" href="../index.html"><i class="ri-arrow-left-line"></i> Voltar ao Inicio</a>
+    </main>
+  </body>
+</html>
