@@ -19,6 +19,7 @@
     --text1:1rem; /*16px*/
     --text2:0.87rem; /*14px - body*/
     --text3:0.72rem; /*12px - details*/
+    --textBigSize:1.05rem;
 
     --spacing-cells:1rem;
     --spacing-text:.35rem;
@@ -31,15 +32,22 @@ html, body{
     scroll-behavior: smooth;
     position: relative;
     font-family: var(--font-pattern);
+    background-color: black;
 }
 
 .headerPage{
-    background-color: red;
+    background-color: black;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem 1rem;
+    position: sticky;
+    top: 0; left: 0;
+}
+.headerPage a{
+    text-decoration: none;
+    color: var(--color-text);
 }
 .headerPage .logo{
     width: 100px;
@@ -52,8 +60,124 @@ html, body{
     height: auto;
     object-fit: cover;
 }
-.headerPage ul li{
-    display: inline-block;
+
+/* CONFIGURACAO MENU DESKTOP */
+.menu, .menu ul{
+    color: var(--color-text);
     list-style: none;
-    margin: 0 1rem;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.menu ul li a{
+    padding: .5rem 1rem;
+    transition: .3s ease-in-out;
+}
+.menu ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.075);
+    border-radius: 30px;
+
+}
+.itemMb{
+    display: none;
+}
+
+
+.btnsAcction{
+    display: flexbox;
+}
+.btnsAcction a{
+    background-color: royalblue;
+    padding: .5rem 1rem;
+    border-radius: 30px;
+}
+.btnsAcction a:first-child{
+    background-color: transparent;
+    border: 1px solid #ffffff2c;
+}
+.objectMenu{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: start;
+}
+.menu i, .btnsAcction i{
+    color: rgba(255, 255, 255, 0.37);
+}
+
+.closerArea{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(255, 0, 0, 0), rgba(0, 0, 255, 0.199));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+@keyframes animeCool {
+    0%{
+        margin-top: -90%;
+    }
+    100%{
+        margin-top: unset;
+    }
+}
+@media screen and (max-width:600px) {
+    .headerPage{
+        justify-content: space-between;
+        padding: 2rem;
+    }
+    .menu{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: -100vh;
+        background: linear-gradient(to bottom, #000000ee, #000000);
+        transition: .4s ease-in-out;
+
+
+        padding: 2rem 1rem;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .openMenu{
+        color: var(--color-text);
+        font-size: var(--textBigSize);
+    }
+    .itemDesk{
+        display: none;
+    }
+    .itemMb{
+        display: unset;
+    }
+    .headerMenu{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ffffff1e;
+    }
+    .menu ul{
+        flex-direction: column;
+        align-items: start;
+        margin: 1.5rem 0;
+        gap: .3rem;
+    }
+    .menu li{
+        width: 100%;
+    }
+    .menu ul li a{
+        background-color: rgba(255, 255, 255, 0.034);
+        width: 100%;
+        border-radius: .4rem;
+        display: flex;
+        padding: 1rem;
+    }
+    .actionAcessUser a{
+        padding: .5rem 1rem;
+        background-color: blue;
+        border-radius: .4rem;
+    }
 }
