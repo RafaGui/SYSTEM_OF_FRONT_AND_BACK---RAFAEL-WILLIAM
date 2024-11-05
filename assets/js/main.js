@@ -5,11 +5,11 @@ const closerArea = document.querySelector('.closerArea');
 // ==========================================================
 const functionOpenMenu = () => {
     modalMenu.style.top = "0%";
-    closerArea.style.animation = "animeCool 1s ease-in-out";
+    // modalMenu.style.opacity = "1";
 }
 const functionCloseMenu = () => {
     modalMenu.style.top = "-100vh";
-    closerArea.style.animation = "none";
+    // modalMenu.style.opacity = "0";
 }
 
 openMenu.addEventListener('click', functionOpenMenu);

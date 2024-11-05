@@ -71,20 +71,11 @@
 .closerArea{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to top, rgba(255, 0, 0, 0), rgba(0, 0, 255, 0.199));
     position: absolute;
     display: none;
     top: 0;
     left: 0;
     z-index: -1;
-}
-@keyframes animeCool {
-    0%{
-        margin-top: -90%;
-    }
-    100%{
-        margin-top: unset;
-    }
 }
 @media screen and (max-width:600px) {
     .headerPage{
@@ -96,12 +87,12 @@
     }
     .menu{
         width: 100%;
+        height: 100vh;
         position: absolute;
         left: 0;
         top: -100vh;
-        background: linear-gradient(to bottom, #000000ee, #000000);
-        transition: .4s ease-in-out;
-
+        background: #000000;
+        transition: .2s linear;
 
         padding: 2rem 1rem;
 
@@ -121,7 +112,11 @@
     .headerMenu{
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid #ffffff1e;
+        /* border-bottom: 1px solid #ffffff1e; */
+        /* padding-bottom: 1rem; */
+    }
+    .headerMenu h3{
+        font-size: 2rem;
     }
     .menu ul{
         flex-direction: column;
@@ -133,9 +128,7 @@
         width: 100%;
     }
     .menu ul li a{
-        background-color: rgba(255, 255, 255, 0.034);
         width: 100%;
-        border-radius: .4rem;
         display: flex;
         padding: 1rem;
     }
