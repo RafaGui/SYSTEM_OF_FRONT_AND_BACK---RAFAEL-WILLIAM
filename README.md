@@ -4,8 +4,8 @@
 
 <br>
 
-![image](![image](https://github.com/user-attachments/assets/1d7c7c79-15d3-435d-92fe-508b8c8e6ac4)
-)
+![image](https://github.com/user-attachments/assets/af418817-d21f-4474-94b1-506db3499a32)
+
 
 > Brief image showing the header and hero of the page.
 
